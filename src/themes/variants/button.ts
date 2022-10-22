@@ -1,19 +1,33 @@
-import { palette, radius } from '../tokens'
+import { ButtonClasses, Theme } from '@mui/material';
+import { OverridesStyleRules } from '@mui/material/styles/overrides';
+import { radius, palette } from "../tokens";
 
-type VariantTypes = 'text' | 'contained' | 'outlined' | undefined
-type SizeTypes = 'small' | 'medium' | 'large' | undefined
+type StyleOverridesType =
+  | Partial<
+      OverridesStyleRules<
+        keyof ButtonClasses,
+        "MuiButton",
+        Omit<Theme, "components">
+      >
+    >
+  | undefined;
 
 export const MuiButton = {
   defaultProps: {
-    variant: 'contained' as VariantTypes,
-    size: 'small' as SizeTypes,
-    disableElevation: true,
+    disableElevation: true
   },
   styleOverrides: {
-    root: {
-      width: '100%',
-      backgroundColor: palette.secondary.main,
-      borderRadius: radius.md,
-    },
-  },
-}
+    root: ({ ownerState }) => ({
+      ...(ownerState.variant === "outlined" && {
+        width: "100%",
+        borderWidth: "2px",
+        textTransform: "none",
+        borderRadius: radius.md,
+        borderColor: palette.neutral[100],
+        ":hover": {
+          borderWidth: "2px"
+        }
+      })
+    })
+  } as StyleOverridesType
+};
