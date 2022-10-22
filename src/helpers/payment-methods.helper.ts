@@ -4,6 +4,7 @@ export const PIX_OPTIONS: PixOptionsType = [
   {
     amount: 30500.0,
     cashback: 3,
+    flag: "🤑 R$ 300,00 de volta no seu Pix na hora",
     installment: 1
   },
   {
@@ -18,7 +19,7 @@ export const PIX_OPTIONS: PixOptionsType = [
   },
   {
     amount: 7725.0,
-    discount: 3,
+    flag: "-3% de juros: Melhor opção de parcelamento",
     installment: 4,
     total: 30900.0
   },
