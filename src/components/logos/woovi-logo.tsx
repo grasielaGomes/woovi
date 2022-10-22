@@ -1,5 +1,5 @@
-import { CardMedia } from "@mui/material";
 import { FC } from "react";
+import { CardMedia } from "@mui/material";
 import { logo } from "../../assets";
 import { ImageAttributes } from "../../interfaces";
 

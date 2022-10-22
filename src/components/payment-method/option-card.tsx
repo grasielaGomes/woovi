@@ -1,9 +1,8 @@
 import { FC } from "react";
-import { Stack, Button, Typography } from "@mui/material";
+import { Stack, Button } from "@mui/material";
 import { OptionContent, CheckOption, Flag } from "../../components";
 import { OptionContentI } from "../../interfaces";
 import { SELECTED_OPTION as styles } from "../../styles";
-import { fontWeight } from "../../themes";
 
 export const OptionCard: FC<OptionContentI> = ({
   amount,

@@ -1,7 +1,7 @@
 import { FC } from "react";
 import { ButtonGroup, Chip } from "@mui/material";
 import { PixI } from "../../interfaces";
-import { OptionCard } from "..";
+import { OptionCard } from "../../components";
 
 interface OptionsI {
   methodLabel: string;
