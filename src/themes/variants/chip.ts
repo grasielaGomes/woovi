@@ -6,12 +6,12 @@ export const MuiChip = {
     root: {
       padding: 8,
       borderRadius: radius.full,
-      backgroundColor: palette.neutral[100]
+      backgroundColor: palette.neutral.light
     },
     label: {
       fontSize: fontSize.lg,
       fontWeight: fontWeight.bold,
-      color: palette.neutral[500]
+      color: palette.neutral.dark
     }
   }
 };

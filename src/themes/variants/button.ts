@@ -23,7 +23,7 @@ export const MuiButton = {
         borderWidth: "2px",
         textTransform: "none",
         borderRadius: radius.md,
-        borderColor: palette.neutral[100],
+        borderColor: palette.neutral.light,
         ":hover": {
           borderWidth: "2px"
         }
