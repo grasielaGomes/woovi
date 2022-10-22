@@ -1,5 +1,5 @@
-import { Stack, Typography } from "@mui/material";
 import { FC } from "react";
+import { Stack, Typography } from "@mui/material";
 import { WooviLogo } from "../../components";
 
 interface PageHeaderI {
@@ -16,7 +16,14 @@ export const PageHeader: FC<PageHeaderI> = ({ title }) => {
           mx: "auto"
         }}
       />
-      <Typography variant="heading1">{title}</Typography>
+      <Typography
+        variant="heading1"
+        textAlign="center"
+        color="neutral.dark"
+        px={[3, 0]}
+      >
+        {title}
+      </Typography>
     </Stack>
   );
 };
