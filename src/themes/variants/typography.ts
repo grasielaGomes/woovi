@@ -1,4 +1,4 @@
-import { fontFamily, fontWeight, fontSize, lineHeight } from "../tokens";
+import { fontFamily, fontWeight, fontSize, lineHeight, palette } from "../tokens";
 
 declare module "@mui/material/Typography" {
   interface TypographyPropsVariantOverrides {
@@ -27,23 +27,28 @@ export const typography = {
   h6: undefined,
   subtitle1: {
     fontSize: fontSize.lg,
-    fontWeight: fontWeight.bold
+    fontWeight: fontWeight.bold,
+    color: palette.neutral.dark
   },
   subtitle2: {
-    fontSize: fontSize.lg
+    fontSize: fontSize.lg,
+    color: palette.neutral.dark
   },
   body1: {
     fontSize: fontSize.md,
-    fontWeight: fontWeight.bold
+    fontWeight: fontWeight.bold,
+    color: palette.neutral.dark
   },
   body2: {
-    fontSize: fontSize.md
+    fontSize: fontSize.md,
+    color: palette.neutral.dark
   },
   button: {
     fontSize: fontSize.lg
   },
   caption: {
     fontSize: fontSize.sm,
+    color: palette.neutral.dark
   },
   tag: {
     fontFamily,
@@ -57,11 +62,13 @@ export const typography = {
     fontFamily,
     lineHeight: lineHeight.short,
     fontSize: fontSize["2xl"],
-    fontWeight: fontWeight.bold
+    fontWeight: fontWeight.bold,
+    color: palette.neutral.dark
   },
   heading2: {
     fontFamily,
     lineHeight: lineHeight.short,
-    fontSize: fontSize["2xl"]
+    fontSize: fontSize["2xl"],
+    color: palette.neutral.dark
   }
 };
