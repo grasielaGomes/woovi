@@ -1,6 +1,8 @@
+import { useNavigate } from "react-router-dom";
 import { Button, MenuItem, Stack, TextField } from "@mui/material";
 
 export const CreditCardForm = () => {
+  let navigate = useNavigate();
   return (
     <Stack
       spacing={3}
@@ -58,7 +60,9 @@ export const CreditCardForm = () => {
           </MenuItem>
         ))}
       </TextField>
-      <Button variant="contained" fullWidth>Pagar</Button>
+      <Button variant="contained" fullWidth onClick={() => navigate("/")}>
+        Pagar
+      </Button>
     </Stack>
   );
 };
