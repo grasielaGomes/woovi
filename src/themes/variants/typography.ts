@@ -1,10 +1,4 @@
-import {
-  fontFamily,
-  fontWeight,
-  fontSize,
-  palette,
-  lineHeight
-} from "../tokens";
+import { fontFamily, fontWeight, fontSize, lineHeight } from "../tokens";
 
 declare module "@mui/material/Typography" {
   interface TypographyPropsVariantOverrides {
@@ -17,10 +11,14 @@ declare module "@mui/material/Typography" {
     h5: false;
     h6: false;
     overline: false;
+    tag: true;
   }
 }
 
 export const typography = {
+  fontFamily,
+  fontWeight: fontWeight.regular,
+  lineHeight: lineHeight.short,
   h1: undefined,
   h2: undefined,
   h3: undefined,
@@ -29,56 +27,41 @@ export const typography = {
   h6: undefined,
   subtitle1: {
     fontSize: fontSize.lg,
-    fontWeight: fontWeight.bold,
-    lineHeight: lineHeight.short,
-    color: palette.neutral[500]
+    fontWeight: fontWeight.bold
   },
   subtitle2: {
-    fontFamily,
-    fontWeight: fontWeight.regular,
-    lineHeight: lineHeight.short,
-    color: palette.neutral[500],
     fontSize: fontSize.lg
   },
   body1: {
     fontSize: fontSize.md,
-    fontWeight: fontWeight.bold,
-    lineHeight: lineHeight.short,
-    color: palette.neutral[500]
+    fontWeight: fontWeight.bold
   },
   body2: {
-    fontFamily,
-    fontWeight: fontWeight.regular,
-    lineHeight: lineHeight.short,
-    color: palette.neutral[500],
     fontSize: fontSize.md
   },
   button: {
-    fontFamily,
-    fontWeight: fontWeight.regular,
-    lineHeight: lineHeight.short,
-    color: palette.neutral[500],
     fontSize: fontSize.lg
   },
   caption: {
     fontSize: fontSize.sm,
-    fontWeight: fontWeight.bold,
-    lineHeight: lineHeight.short,
-    color: palette.neutral[500]
   },
-  overline: undefined,
+  tag: {
+    fontFamily,
+    lineHeight: lineHeight.short,
+    fontSize: fontSize.md,
+    "@media (max-width:500px)": {
+      fontSize: fontSize.xs
+    }
+  },
   heading1: {
     fontFamily,
-    fontSize: fontSize["2xl"],
-    fontWeight: fontWeight.bold,
     lineHeight: lineHeight.short,
-    color: palette.neutral[500]
+    fontSize: fontSize["2xl"],
+    fontWeight: fontWeight.bold
   },
   heading2: {
     fontFamily,
-    fontWeight: fontWeight.regular,
     lineHeight: lineHeight.short,
-    color: palette.neutral[500],
     fontSize: fontSize["2xl"]
   }
 };
