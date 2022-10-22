@@ -1,4 +1,7 @@
 export * from './assets'
 export * from './components'
 export * from './pages'
+export * from './styles'
+export * from './helpers'
+export * from './interfaces'
 export * from './themes'
