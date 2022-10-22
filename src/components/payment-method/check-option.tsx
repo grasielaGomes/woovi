@@ -1,6 +1,5 @@
 import { FC } from "react";
-import CheckCircle from "@mui/icons-material/CheckCircle";
-import UncheckedIcon from "@mui/icons-material/RadioButtonUnchecked";
+import { CheckIcon, RadioIcon } from "../icons";
 
 interface CheckOptionI {
   isSelected?: boolean;
@@ -14,9 +13,9 @@ export const CheckOption: FC<CheckOptionI> = ({
   return (
     <>
       {isSelected ? (
-        <CheckCircle color="primary" sx={{ fontSize }} />
+        <CheckIcon sx={{ fontSize }} />
       ) : (
-        <UncheckedIcon sx={{ fontSize, color: "neutral.100" }} />
+        <RadioIcon sx={{ fontSize }} />
       )}
     </>
   );

@@ -1,7 +1,7 @@
 export interface PixI {
   amount: number;
   cashback?: number;
-  discount?: number;
+  flag?: string;
   installment: number;
   total?: number;
 }

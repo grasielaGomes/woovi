@@ -11,7 +11,12 @@ export const OptionContent: FC<PixI> = ({
 }) => {
   return (
     <Stack>
-      <Typography variant="heading1" display="inline" textAlign="left">
+      <Typography
+        variant="heading1"
+        display="inline"
+        textAlign="left"
+        color="neutral.dark"
+      >
         {`${installment}x `}
         <span style={{ fontWeight: fontWeight.regular }}>{amount}</span>
       </Typography>
@@ -19,7 +24,7 @@ export const OptionContent: FC<PixI> = ({
         <Typography
           textAlign="left"
           variant="body2"
-          color="neutral.200"
+          color="neutral.main"
         >{`Total: ${total}`}</Typography>
       )}
       {cashback && (
