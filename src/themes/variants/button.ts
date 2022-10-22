@@ -27,6 +27,12 @@ export const MuiButton = {
         ":hover": {
           borderWidth: "2px"
         }
+      }),
+      ...(ownerState.variant === "contained" && {
+        textTransform: "none",
+        borderRadius: radius.md,
+        backgroundColor: palette.secondary.main,
+        color: palette.white,
       })
     })
   } as StyleOverridesType
