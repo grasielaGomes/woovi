@@ -5,7 +5,8 @@ export const palette = {
     main: "#03D69D"
   },
   secondary: {
-    main: "#133A6F"
+    main: "#133A6F",
+    dark: "#0b2446"
   },
   neutral: {
     light: "#E5E5E5",
