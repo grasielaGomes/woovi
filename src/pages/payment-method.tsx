@@ -1,14 +1,10 @@
-import {
-  BaseTemplate,
-  Options,
-  PageFooter,
-  PageHeader,
-} from "../components";
+import { Box } from "@mui/material";
+import { Options, PageHeader } from "../components";
 import { PIX_OPTIONS as options } from "../helpers";
 
 export const PaymentMethod = () => {
   return (
-    <BaseTemplate>
+    <>
       <PageHeader title="João, como você quer pagar?" />
       <Options
         options={options.slice(0, 1)}
@@ -20,7 +16,6 @@ export const PaymentMethod = () => {
         selectedOption={2}
         methodLabel="Pix parcelado"
       />
-      <PageFooter />
-    </BaseTemplate>
+    </>
   );
 };
