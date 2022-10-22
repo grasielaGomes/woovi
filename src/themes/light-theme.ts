@@ -1,4 +1,4 @@
-import { createTheme } from "@mui/material/styles";
+import { createTheme } from "@mui/material";
 import { palette } from "./tokens";
 import { MuiButton, typography, MuiChip } from "./variants";
 
@@ -7,6 +7,6 @@ export const lightTheme = createTheme({
   typography,
   components: {
     MuiButton,
-    MuiChip
+    MuiChip,
   }
 });
