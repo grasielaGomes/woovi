@@ -1,33 +1,40 @@
-interface PixI {
-  amount: number,
-  cashback?: number,
-  discount?: number
-}
+import { PixOptionsType } from "../interfaces";
 
-type PixOptionsType = {[key: string]: PixI}
-
-export const PIX_OPTIONS: PixOptionsType = {
-  "1": {
+export const PIX_OPTIONS: PixOptionsType = [
+  {
     amount: 30500.0,
-    cashback: 3
+    cashback: 3,
+    installment: 1
   },
-  "2": {
-    amount: 15300.0
+  {
+    amount: 15300.0,
+    installment: 2,
+    total: 30600.0
   },
-  "3": {
-    amount: 10196.66
+  {
+    amount: 10196.66,
+    installment: 3,
+    total: 30620.0
   },
-  "4": {
+  {
     amount: 7725.0,
-    discount: 3
+    discount: 3,
+    installment: 4,
+    total: 30900.0
   },
-  "5": {
-    amount: 6300.0
+  {
+    amount: 6300.0,
+    installment: 5,
+    total: 31500.0
   },
-  "6": {
-    amount: 5283.33
+  {
+    amount: 5283.33,
+    installment: 6,
+    total: 31699.98
   },
-  "7": {
-    amount: 4542.85
+  {
+    amount: 4542.85,
+    installment: 7,
+    total: 31800.0
   }
-};
+];
