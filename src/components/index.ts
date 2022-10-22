@@ -4,4 +4,6 @@ export * from "./headers";
 export * from './icons'
 export * from "./logos";
 export * from './payment-method'
+export * from "./pix"
+export * from './pix-credit-card'
 export * from "./templates";

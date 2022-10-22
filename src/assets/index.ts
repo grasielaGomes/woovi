@@ -1,2 +1,3 @@
 import logo from "./logo.svg";
-export { logo };
+import pixCode from "./qr-code.svg";
+export { logo, pixCode };
