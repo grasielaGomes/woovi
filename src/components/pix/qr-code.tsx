@@ -3,12 +3,10 @@ import { useNavigate } from "react-router-dom";
 import { CardMedia, useTheme, Button, Stack } from "@mui/material";
 import { ImageAttributes } from "../../interfaces";
 import { CopyIcon } from "../../components";
+import { pixCreditCardStore } from "../../stores";
 
-interface PixQRCodeI extends ImageAttributes {
-  code: string;
-}
-
-export const PixQRCode: FC<PixQRCodeI> = ({ code }, props) => {
+export const PixQRCode: FC<ImageAttributes> = (props) => {
+  const { code } = pixCreditCardStore.getState();
   let navigate = useNavigate();
   const theme = useTheme();
   return (

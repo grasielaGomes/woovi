@@ -1,4 +1,3 @@
-import { pixCode } from "../assets";
 import { PageHeader, PixQRCode, Summary } from "../components";
 import { paymentOptionsStore } from "../stores";
 
@@ -9,7 +8,7 @@ export const Pix = () => {
       <PageHeader
         title={`João, pague a entrada de ${selectedOption.amount} pelo Pix`}
       />
-      <PixQRCode code={pixCode} />
+      <PixQRCode />
       <Summary />
     </>
   );
