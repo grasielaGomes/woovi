@@ -25,8 +25,8 @@ export const HowItWorks = () => {
         </AccordionSummary>
         <AccordionDetails sx={{ borderRadius: 0 }}>
           <Typography variant="body2">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-            malesuada lacus ex, sit amet blandit leo lobortis eget.
+            Agora você tem a opção de parcelar suas compras no Pix, assim
+            como é feito no cartão de crédito ou no carnê.
           </Typography>
         </AccordionDetails>
       </Accordion>
