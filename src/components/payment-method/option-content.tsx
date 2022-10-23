@@ -28,7 +28,12 @@ export const OptionContent: FC<PixI> = ({
         >{`Total: ${total}`}</Typography>
       )}
       {cashback && (
-        <Typography variant="body2" color="primary" display="inline">
+        <Typography
+          variant="body2"
+          color="primary"
+          display="inline"
+          textAlign="left"
+        >
           Ganhe
           <span
             style={{ fontWeight: fontWeight.bold }}
