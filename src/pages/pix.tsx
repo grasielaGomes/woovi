@@ -1,11 +1,14 @@
-import { Box } from "@mui/material";
 import { pixCode } from "../assets";
 import { PageHeader, PixQRCode, Summary } from "../components";
+import { paymentOptionsStore } from "../stores";
 
 export const Pix = () => {
+  const { selectedOption } = paymentOptionsStore.getState();
   return (
     <>
-      <PageHeader title="João, pague a entrada de R$ 15.300,00 pelo Pix" />
+      <PageHeader
+        title={`João, pague a entrada de ${selectedOption.amount} pelo Pix`}
+      />
       <PixQRCode code={pixCode} />
       <Summary />
     </>

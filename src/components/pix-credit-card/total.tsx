@@ -1,6 +1,9 @@
 import { Stack, Typography } from "@mui/material";
+import { paymentOptionsStore } from "../../stores";
 
 export const Total = () => {
+  const { selectedOption } = paymentOptionsStore.getState();
+  const cet = selectedOption.cet.toLocaleString();
   return (
     <Stack
       direction="row"
@@ -9,9 +12,9 @@ export const Total = () => {
       spacing={1}
     >
       <Typography variant="caption" color="neutral.main">
-        CET: 0,5%
+        {`CET: ${cet}%`}
       </Typography>
-      <Typography variant="subtitle2">Total: R$ 30.600,00</Typography>
+      <Typography variant="subtitle2">{`Total: ${selectedOption.total}`}</Typography>
     </Stack>
   );
 };
