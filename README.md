@@ -1,9 +1,12 @@
 # Woovi
 Front-end challenge
 
+## Layout
+![layout](docs/woovi.jpg)
+
 
 ## Live Project
-https://grasielagomes.github.io/woovi/
+https://woovi.vercel.app
 
 
 ## How to use
