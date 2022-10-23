@@ -10,7 +10,7 @@ import {
 export const Summary = () => {
   return (
     <>
-      <DueDate date="15/12/2021 - 08:17" />
+      <DueDate />
       <Stack spacing={2}>
         <Installments />
         <Divider />
